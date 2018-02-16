@@ -1,0 +1,75 @@
+{
+  "name": "react-native-super-injector",
+  "version": "0.1.2",
+  "description": "An 'injectable' react-native component that allows an external component to be injected during run-time while falling back to a default component",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "prepare": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeoneux/react-native-super-injector.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-native component",
+    "strategy pattern",
+    "dependency injection",
+    "flexible react-native"
+  ],
+  "author": {
+    "name": "Aayush Kapoor",
+    "email": "xeoneux@icloud.com",
+    "url": "http://www.aayushkapoor.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xeoneux/react-native-super-injector/issues"
+  },
+  "homepage": "https://github.com/xeoneux/react-native-super-injector#README",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^22.1.2",
+    "@types/react": "^16.0.38",
+    "@types/react-native": "^0.52.12",
+    "@types/react-test-renderer": "^16.0.1",
+    "babel-jest": "^22.2.2",
+    "babel-preset-react-native": "^4.0.0",
+    "jest": "^22.3.0",
+    "react": "*",
+    "react-native": "*",
+    "react-test-renderer": "^16.2.0",
+    "ts-jest": "^22.0.4",
+    "tslint": "^5.9.1",
+    "tslint-react": "^3.5.1",
+    "typescript": "^2.7.1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
+    ],
+    "cacheDirectory": ".jest/cache",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ]
+  }
+}

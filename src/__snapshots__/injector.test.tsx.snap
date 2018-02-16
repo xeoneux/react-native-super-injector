@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render injector properly 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    selectable={false}
+    stubProp={true}
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+  >
+    Hello World
+  </Text>
+</View>
+`;
