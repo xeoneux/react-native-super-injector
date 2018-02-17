@@ -1,10 +1,9 @@
-import React from "react";
-import { Component, ComponentClass, Props } from "react";
+import React, { Component, ComponentClass, Props, SFC } from "react";
 
 export interface IInjectorProps extends Props<any> {
-  defaultComponent?: ComponentClass;
-  defaultProps: object;
-  injectant?: ComponentClass;
+  defaultComponent?: ComponentClass<any> | SFC<any>;
+  defaultProps?: object;
+  injectant?: ComponentClass<any> | SFC<any>;
   injectantProps?: object;
 }
 
