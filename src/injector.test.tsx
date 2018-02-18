@@ -1,5 +1,4 @@
 import React from "react";
-import { Component, Props } from "react";
 import { Text, View } from "react-native";
 import ReactTestRenderer from "react-test-renderer";
 
@@ -28,15 +27,13 @@ const injectProps = {
   style: { color: "black" },
 };
 
-class StubTextComponent extends Component<Props<any>> {
-  public render() {
-    return (
-      <View>
-        <Text {...this.props}>{this.props.children}</Text>
-      </View>
-    );
-  }
-}
+const StubTextComponent: React.ComponentType = (props: React.Props<any>) => {
+  return (
+    <View>
+      <Text {...props}>{props.children}</Text>
+    </View>
+  );
+};
 
 const injectorTree = ReactTestRenderer.create(
   <Injector

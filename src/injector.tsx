@@ -1,14 +1,13 @@
 import React from "react";
-import { Component, ComponentClass, Props, SFC } from "react";
 
-export interface IInjectorProps extends Props<any> {
-  defaultComponent?: ComponentClass<any> | SFC<any>;
+export interface IInjectorProps extends React.Props<any> {
+  defaultComponent?: React.ComponentType<any>;
   defaultProps?: object;
-  injectant?: ComponentClass<any> | SFC<any>;
+  injectant?: React.ComponentType<any>;
   injectantProps?: object;
 }
 
-export default class Injector extends Component<IInjectorProps> {
+export default class Injector extends React.Component<IInjectorProps> {
   private static renderDefault(props: IInjectorProps) {
     const DefaultComponent = props.defaultComponent!;
     const { defaultProps } = props;
