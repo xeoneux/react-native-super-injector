@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import ReactTestRenderer from "react-test-renderer";
 
-import Injector from "./injector";
+import Injector from "../injector";
 
 const testProps = {
   selectable: true,
