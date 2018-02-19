@@ -1,8 +1,8 @@
 {
   "name": "react-native-super-injector",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An 'injectable' react-native component that allows an external component to be injected during run-time while falling back to a default component",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
     "prepare": "tsc",

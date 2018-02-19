@@ -47,4 +47,4 @@ typings/
 .jest
 
 # Build directory
-build
+dist
